@@ -26,14 +26,23 @@ class UsersBDTest {
 
     @Test
     void addCard() {
-        List<String> users = new ArrayList<>();
-        users.add(String.valueOf(user1));
-        users.add(String.valueOf(user2));
-        users.add(String.valueOf(user3));
+        UsersBD usersBD = new UsersBD();
 
-        users.add(String.valueOf(user4));
-        Assertions.assertEquals(4, users.size(), "No card added");
+        usersBD.addCard(user1);
+        usersBD.addCard(user2);
+        usersBD.addCard(user3);
+        usersBD.addCard(user4);
 
-
+        Assertions.assertEquals(4, usersBD.getUsers().size(), "No card added");
     }
+
+//    void addCardON() {
+//        List<String> users = new ArrayList<>();
+//        users.add(String.valueOf(user1));
+//        users.add(String.valueOf(user2));
+//        users.add(String.valueOf(user3));
+//
+//        users.add(String.valueOf(user4));
+//        Assertions.assertTrue(3,users. "//No card added");
+//    }
 }

@@ -23,12 +23,13 @@ public class Main {
         usersBD.addCard(user3);
         usersBD.addCard(user4);
 
-        System.out.println(usersBD.getUsers());
+ //       System.out.println(usersBD.getUsers());
 
         WriteFile.writeFile(usersBD.getUsers());
         String path = "cards.txt";
         System.out.println(ReadFile.readFile(path));
 
-        CardParsing.parsingCard(ReadFile.readFile(path));
+        System.out.println(CardParsing.parsingCard(ReadFile.readFile(path)));
+
     }
 }
