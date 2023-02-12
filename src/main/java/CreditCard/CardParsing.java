@@ -8,7 +8,7 @@ public class CardParsing {
 
     public static String parsingCard(List<String> list) {
 
-        System.out.println("Begin");
+    //    System.out.println("Begin");
 
         String regex = "cardNumber=(\\d+), name=(\\w+), lastName=(\\w+), dateMonth=(\\d+), dateYear=(\\d+), cvv=(\\d+)";
         Pattern pattern = Pattern.compile(regex);

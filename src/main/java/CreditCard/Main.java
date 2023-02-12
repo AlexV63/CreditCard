@@ -25,6 +25,7 @@ public class Main {
 
  //       System.out.println(usersBD.getUsers());
 
+
         WriteFile.writeFile(usersBD.getUsers());
         String path = "cards.txt";
         System.out.println(ReadFile.readFile(path));
